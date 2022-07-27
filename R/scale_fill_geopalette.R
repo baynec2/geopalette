@@ -29,8 +29,8 @@ scale_fill_geopalette <- function(location, zoom = "city", discrete = TRUE) {
     create_palette()
 
   if (discrete) {
-    ggplot2::discrete_scale("fill", paste0("geopallete"), palette = pal, ...)
+    ggplot2::discrete_scale("fill", paste0("geopallete"), palette = pal)
   } else {
-    ggplot2::scale_fill_gradientn(colours = pal(256), ...)
+    ggplot2::scale_fill_gradientn(colours = pal(50))
   }
 }
