@@ -1,12 +1,18 @@
 #' google_image_request_url
 #'
-#' @param location
-#' @param zoom
+#' This function returns a url that will return a url compatible with google static  maps API that corresponds to the the user specified location
 #'
-#' @return
+#' @param location this is the location. Note, there should be no spaces/
+#' @param zoom level of zoom. This can be specified to be at the continent, city, streets, or building scale.
+#'
+#' @return a url that is compatible with the google API
 #' @export
 #'
 #' @examples
+#'
+#' # returns the url to access a satellite image of Moab, UT.
+#' moab_url = google_image_request_url("Moab,UT","city")
+#'
 google_image_request_url = function(location,zoom="city"){
   #Setting zoom
   if(zoom =="continent"){

@@ -1,13 +1,23 @@
 #' scale_color_geopalette
+#' geopalette scale color for ggplot2
 #'
-#' @param palette
-#' @param discrete
+#' @param location location for image to be centered on
+#' @param zoom zoom level
+#' @param discrete duscrete values? TRUE or FALSE
 #'
-#' @return
+#' @return ggplot2 scale
 #' @export
 #'
 #' @examples
-scale_color_geopalette = function(location,zoom = "city",discrete = TRUE, reverse = FALSE, ...) {
+#' #Coloring mpg using continuous coloring based on Culpeper,VA.
+#' p1 = mtcars %>%
+#' as.data.frame() %>%
+#' tibble::rownames_to_column("car") %>%
+#'  ggplot(aes(hp,mpg,color = mpg))+
+#'  geom_point()+
+#'  scale_color_geopalette("Culpeper,VA",zoom = "city",discrete = FALSE)
+#' p1
+scale_color_geopalette = function(location,zoom = "city",discrete = TRUE,) {
 
  pal  = google_image_request_url(location,zoom) %>%
    read_image_url() %>%

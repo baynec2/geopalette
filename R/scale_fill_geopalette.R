@@ -1,16 +1,26 @@
 #' scale_fill_geopalette
 #'
-#' @param location
-#' @param zoom
-#' @param discrete
-#' @param reverse
-#' @param ...
+#' geopalette scale fill for ggplot2
 #'
-#' @return
+#' @param location location for image to be centered on
+#' @param zoom zoom level
+#' @param discrete duscrete values? TRUE or FALSE
+#'
+#' @return ggplot2 scale
 #' @export
 #'
 #' @examples
-scale_fill_geopalette <- function(location, zoom = "city", discrete = TRUE, reverse = FALSE, ...) {
+#' # Coloring each bar by car type
+#' p1 = mtcars %>%
+#' as.data.frame() %>%
+#'  tibble::rownames_to_column("car") %>%
+#'   ggplot(aes(car,mpg,fill = car))+
+#'  geom_col()+
+#'  scale_fill_geopalette("SanDiego,CA",zoom = "city")+
+#'  theme(axis.text.x = element_blank())
+#' p1
+
+scale_fill_geopalette <- function(location, zoom = "city", discrete = TRUE) {
 
   pal  = google_image_request_url(location,zoom) %>%
     read_image_url() %>%

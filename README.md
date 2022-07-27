@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# geopalette <a href='https://github.com/baynec2/geopalette'><img src='resources/hex-geopalette.png' align="right" height="139" /></a>
+# geopalette <a href='https://github.com/baynec2/geopalette'><img src='man/hex-geopalette.png' align="right" height="139" /></a>
 
 <!-- badges: start -->
 
@@ -19,7 +19,7 @@ course not, but it might be kinda cool!
 
 ## Installation
 
-You can install the development version of Geopalette like so:
+You can install the development version of geopalette like so:
 
 ``` r
 devtools::install_github(baynec2/geopalette)
@@ -85,7 +85,7 @@ Sandiego
 <img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 Perhaps not surprisingly, the colors found in San diego are very
-different looking from those in colors.
+different looking from those in Culpeper.
 
 While these plots represent the unique colors found at each location, we
 still want to be able to create a palette from them. This should work by

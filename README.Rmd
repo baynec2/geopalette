@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# geopalette <a href='https://github.com/baynec2/geopalette'><img src='resources/hex-geopalette.png' align="right" height="139" /></a>
+# geopalette <a href='https://github.com/baynec2/geopalette'><img src='man/hex-geopalette.png' align="right" height="139" /></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/baynec2/geopalette/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/baynec2/geopalette/actions/workflows/R-CMD-check.yaml)
@@ -28,7 +28,7 @@ Is this necessary, or the best way to choose a color palette? No of course not, 
 
 ## Installation
 
-You can install the development version of Geopalette like so:
+You can install the development version of geopalette like so:
 
 ``` r
 devtools::install_github(baynec2/geopalette)
@@ -88,7 +88,7 @@ Sandiego = google_image_request_url("SanDiego,CA","city") %>%
 Sandiego
 ```
 
-Perhaps not surprisingly, the colors found in San diego are very different looking from those in colors.
+Perhaps not surprisingly, the colors found in San diego are very different looking from those in Culpeper. 
 
 While these plots represent the unique colors found at each location, we still want to be able to create a palette from them. This should work by sorting the colors by similarity and then grouping into 8 distinct groups to form the palette. 
 
