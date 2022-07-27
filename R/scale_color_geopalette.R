@@ -17,7 +17,7 @@
 #'  geom_point()+
 #'  scale_color_geopalette("Culpeper,VA",zoom = "city",discrete = FALSE)
 #' p1
-scale_color_geopalette = function(location,zoom = "city",discrete = TRUE,) {
+scale_color_geopalette = function(location,zoom = "city",discrete = TRUE) {
 
  pal  = google_image_request_url(location,zoom) %>%
    read_image_url() %>%
