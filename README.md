@@ -1,12 +1,12 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Geopalette
+# geopalette <a href='https://github.com/baynec2/geopalette'><img src='resources/hex-geopalette.png' align="right" height="139" /></a>
 
 <!-- badges: start -->
-<!-- badges: end -->
 
-![](resources/hex-geopalette.png)
+[![R-CMD-check](https://github.com/baynec2/geopalette/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/baynec2/geopalette/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
 
 The goal of geopalette is to provide a fun new way to make color
 palletes based on a user specified location! In short, this package

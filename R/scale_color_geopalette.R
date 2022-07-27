@@ -19,7 +19,7 @@ scale_color_geopalette = function(location,zoom = "city",discrete = TRUE, revers
   if (discrete) {
     ggplot2::discrete_scale("colour", paste0("geopallete"), palette = pal, ...)
   } else {
-    ggplot2::scale_color_gradientn(colours = pal(256), ...)
+    ggplot2::scale_color_gradientn(colours = pal(50), ...)
   }
 }
 
