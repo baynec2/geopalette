@@ -2,7 +2,7 @@
 #'
 #' simple function to plot colors
 #'
-#' @param colors  list of colors to plot
+#' @param unique_colors  list of colors to plot
 #'
 #' @return ggplot2 object
 #' @export
