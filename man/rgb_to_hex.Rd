@@ -23,5 +23,5 @@ changing rgb to hex
 }
 \examples{
 #Rgb values for blue -> #0000FF
-rbb_to_hex(0,0,1)
+rgb_to_hex(0,0,1)
 }
