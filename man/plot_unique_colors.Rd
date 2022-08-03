@@ -7,7 +7,7 @@
 plot_unique_colors(unique_colors)
 }
 \arguments{
-\item{colors}{list of colors to plot}
+\item{unique_colors}{list of colors to plot}
 }
 \value{
 ggplot2 object

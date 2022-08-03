@@ -16,7 +16,7 @@ this returns a plotted image
 plotting png image.
 }
 \examples{
-This will show the image used for
+# This will show the image used for
 google_image_request_url("Culpeper,VA","city") \%>\%
 read_image_url() \%>\%
 show_image()
