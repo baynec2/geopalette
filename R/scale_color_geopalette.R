@@ -3,7 +3,7 @@
 #'
 #' @param location location for image to be centered on
 #' @param zoom zoom level
-#' @param discrete duscrete values? TRUE or FALSE
+#' @param discrete discrete values? TRUE or FALSE
 #'
 #' @return ggplot2 scale
 #' @export
@@ -14,7 +14,7 @@
 #' as.data.frame() %>%
 #' tibble::rownames_to_column("car") %>%
 #'  ggplot2::ggplot(ggplot2::aes(hp,mpg,color = mpg))+
-#'  gggplot2::eom_point()+
+#'  ggplot2::geom_point()+
 #'  scale_color_geopalette("Culpeper,VA",zoom = "city",discrete = FALSE)
 #' p1
 scale_color_geopalette = function(location,zoom = "city",discrete = TRUE) {

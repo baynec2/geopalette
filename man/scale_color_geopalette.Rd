@@ -12,7 +12,7 @@ scale_color_geopalette(location, zoom = "city", discrete = TRUE)
 
 \item{zoom}{zoom level}
 
-\item{discrete}{duscrete values? TRUE or FALSE}
+\item{discrete}{discrete values? TRUE or FALSE}
 }
 \value{
 ggplot2 scale
@@ -27,7 +27,7 @@ p1 = mtcars \%>\%
 as.data.frame() \%>\%
 tibble::rownames_to_column("car") \%>\%
  ggplot2::ggplot(ggplot2::aes(hp,mpg,color = mpg))+
- gggplot2::eom_point()+
+ ggplot2::geom_point()+
  scale_color_geopalette("Culpeper,VA",zoom = "city",discrete = FALSE)
 p1
 }
