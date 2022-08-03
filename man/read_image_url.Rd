@@ -7,8 +7,15 @@
 read_image_url(google_image_request_url)
 }
 \arguments{
-\item{google_image_request_url}{}
+\item{google_image_request_url}{url to get image.}
+}
+\value{
+png image in R
 }
 \description{
-read_image_url
+reads image  into R from url passed to google API
+}
+\examples{
+# This will print the image associate with the image request url
+read_image_url(google_image_request_url)
 }

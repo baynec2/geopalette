@@ -7,8 +7,24 @@
 plot_unique_colors(unique_colors)
 }
 \arguments{
-\item{colors}{}
+\item{colors}{list of colors to plot}
+}
+\value{
+ggplot2 object
 }
 \description{
-plot_unique_colors
+simple function to plot colors
+}
+\examples{
+
+#Plotting 8  colors from culpeper palette.
+culpeper = google_image_request_url("Culpeper,VA","city") \%>\%
+read_image_url() \%>\%
+determine_unique_colors() \%>\%
+sort_colors()
+
+culpeper_pal = create_palette(culpeper)
+
+plot_unique_colors(culpeper_pal(8))
+
 }

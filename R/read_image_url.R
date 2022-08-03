@@ -7,6 +7,8 @@
 #' @export
 #'
 #' @examples
+#' # This will print the image associate with the image request url
+#' read_image_url(google_image_request_url)
 read_image_url = function(google_image_request_url){
 # Downloading and reading image.
 curl::curl_download(google_image_request_url,destfile = "temp.png")

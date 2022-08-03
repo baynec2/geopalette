@@ -8,10 +8,13 @@ Description: geopalette makes color palettes from user specified locations using
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
 Imports: 
     magrittr,
     curl,
     png,
     ggplot2,
-    TSP
+    TSP,
+    purrr,
+    grDevices,
+    stats

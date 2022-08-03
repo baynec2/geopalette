@@ -1,7 +1,8 @@
 #' create_palette
+#'
 #'This function will create a palette given a list of unique colors.
 #'
-#' @param unique_colors this is a list of unique colors. Intended to be the output of determine_unique_colors()
+#' @param unique_colors this is a list of unique colors. Intended to be the output of determine_unique_colors
 #'
 #' @return color palette
 #' @export

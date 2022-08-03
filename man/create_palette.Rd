@@ -7,8 +7,21 @@
 create_palette(unique_colors)
 }
 \arguments{
-\item{unique_colors}{}
+\item{unique_colors}{this is a list of unique colors. Intended to be the output of determine_unique_colors}
+}
+\value{
+color palette
 }
 \description{
-create_palette
+This function will create a palette given a list of unique colors.
+}
+\examples{
+#Creating a color palette from Culpeper, VA
+
+culpeper = google_image_request_url("Culpeper,VA","city") \%>\%
+ read_image_url() \%>\%
+  determine_unique_colors() \%>\%
+   sort_colors()
+
+culpeper_pal = create_palette(culpeper)
 }

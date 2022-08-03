@@ -7,8 +7,17 @@
 show_image(image)
 }
 \arguments{
-\item{image}{}
+\item{image}{png image read into R. intended to be the output of read_image_url()}
+}
+\value{
+this returns a plotted image
 }
 \description{
-show_image
+plotting png image.
+}
+\examples{
+This will show the image used for
+google_image_request_url("Culpeper,VA","city") \%>\%
+read_image_url() \%>\%
+show_image()
 }

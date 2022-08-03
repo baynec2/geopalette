@@ -7,8 +7,18 @@
 determine_unique_colors(image)
 }
 \arguments{
-\item{image}{}
+\item{image}{this is the image. is intended to be the output of read_image_url()}
+}
+\value{
+list of unique colors
 }
 \description{
-determine_unique_colors
+Determining unique colors from a png image in R.
+}
+\examples{
+
+# determining the unique colors from Culpeper,VA image.
+culpeper = google_image_request_url("Culpeper,VA","city") \%>\%
+read_image_url() \%>\%
+determine_unique_colors()
 }

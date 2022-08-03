@@ -4,17 +4,29 @@
 \alias{scale_fill_geopalette}
 \title{scale_fill_geopalette}
 \usage{
-scale_fill_geopalette(
-  location,
-  zoom = "city",
-  discrete = TRUE,
-  reverse = FALSE,
-  ...
-)
+scale_fill_geopalette(location, zoom = "city", discrete = TRUE)
 }
 \arguments{
-\item{...}{}
+\item{location}{location for image to be centered on}
+
+\item{zoom}{zoom level}
+
+\item{discrete}{duscrete values? TRUE or FALSE}
+}
+\value{
+ggplot2 scale
 }
 \description{
-scale_fill_geopalette
+geopalette scale fill for ggplot2
+}
+\examples{
+# Coloring each bar by car type
+p1 = mtcars \%>\%
+as.data.frame() \%>\%
+ tibble::rownames_to_column("car") \%>\%
+  ggplot(aes(car,mpg,fill = car))+
+ geom_col()+
+ scale_fill_geopalette("SanDiego,CA",zoom = "city")+
+ theme(axis.text.x = element_blank())
+p1
 }

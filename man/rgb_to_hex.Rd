@@ -2,13 +2,26 @@
 % Please edit documentation in R/rgb_to_hex.R
 \name{rgb_to_hex}
 \alias{rgb_to_hex}
-\title{rgb_to_hex}
+\title{rgb_to_hex
+changing rgb to hex}
 \usage{
 rgb_to_hex(red, green, blue)
 }
 \arguments{
-\item{blue}{}
+\item{red}{red color channel}
+
+\item{green}{green color channel}
+
+\item{blue}{blue color channel}
+}
+\value{
+colors in hex format
 }
 \description{
 rgb_to_hex
+changing rgb to hex
+}
+\examples{
+#Rgb values for blue -> #0000FF
+rbb_to_hex(0,0,255)
 }

@@ -2,19 +2,32 @@
 % Please edit documentation in R/scale_color_geopalette.R
 \name{scale_color_geopalette}
 \alias{scale_color_geopalette}
-\title{scale_color_geopalette}
+\title{scale_color_geopalette
+geopalette scale color for ggplot2}
 \usage{
-scale_color_geopalette(
-  location,
-  zoom = "city",
-  discrete = TRUE,
-  reverse = FALSE,
-  ...
-)
+scale_color_geopalette(location, zoom = "city", discrete = TRUE)
 }
 \arguments{
-\item{discrete}{}
+\item{location}{location for image to be centered on}
+
+\item{zoom}{zoom level}
+
+\item{discrete}{duscrete values? TRUE or FALSE}
+}
+\value{
+ggplot2 scale
 }
 \description{
 scale_color_geopalette
+geopalette scale color for ggplot2
+}
+\examples{
+#Coloring mpg using continuous coloring based on Culpeper,VA.
+p1 = mtcars \%>\%
+as.data.frame() \%>\%
+tibble::rownames_to_column("car") \%>\%
+ ggplot(aes(hp,mpg,color = mpg))+
+ geom_point()+
+ scale_color_geopalette("Culpeper,VA",zoom = "city",discrete = FALSE)
+p1
 }

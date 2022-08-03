@@ -11,10 +11,10 @@
 #'
 #' # determining the unique colors from Culpeper,VA image.
 #' culpeper = google_image_request_url("Culpeper,VA","city") %>%
-# read_image_url() %>%
-# determine_unique_colors()
+#' read_image_url() %>%
+#'determine_unique_colors()
 
-determine_unique_colors = function(){
+determine_unique_colors = function(image){
 red = image[,,1] %>% as.vector()
 green = image[,,2] %>% as.vector()
 blue = image[,,3] %>% as.vector()

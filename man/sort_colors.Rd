@@ -2,13 +2,25 @@
 % Please edit documentation in R/sort_colors.R
 \name{sort_colors}
 \alias{sort_colors}
-\title{sort_colors}
+\title{sort_colors
+This function sorts colors using the "arbitrary insertion" algorithm with two_opt refinement.}
 \usage{
 sort_colors(unique_colors)
 }
 \arguments{
-\item{unique_colors}{}
+\item{unique_colors}{this is a list of unique colors}
+}
+\value{
+a sorted list of colors
 }
 \description{
 sort_colors
+This function sorts colors using the "arbitrary insertion" algorithm with two_opt refinement.
+}
+\examples{
+# Here the colors are sorted.
+Sandiego = google_image_request_url("SanDiego,CA","city") \%>\%
+read_image_url() \%>\%
+determine_unique_colors() \%>\%
+sort_colors()
 }

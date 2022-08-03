@@ -7,8 +7,18 @@
 google_image_request_url(location, zoom = "city")
 }
 \arguments{
-\item{zoom}{}
+\item{location}{this is the location. Note, there should be no spaces.}
+
+\item{zoom}{level of zoom. This can be specified to be at the continent, city, streets, or building scale.}
+}
+\value{
+a url that is compatible with the google API
 }
 \description{
-google_image_request_url
+This function returns a url that will return a url compatible with google static  maps API that corresponds to the the user specified location
+}
+\examples{
+
+# returns the url to access a satellite image of Moab, UT.
+moab_url = google_image_request_url(location = "Moab,UT",zoom="city")
 }
