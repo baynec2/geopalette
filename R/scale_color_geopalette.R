@@ -13,8 +13,8 @@
 #' p1 = mtcars %>%
 #' as.data.frame() %>%
 #' tibble::rownames_to_column("car") %>%
-#'  ggplot(aes(hp,mpg,color = mpg))+
-#'  geom_point()+
+#'  ggplot2::ggplot(ggplot2::aes(hp,mpg,color = mpg))+
+#'  gggplot2::eom_point()+
 #'  scale_color_geopalette("Culpeper,VA",zoom = "city",discrete = FALSE)
 #' p1
 scale_color_geopalette = function(location,zoom = "city",discrete = TRUE) {
