@@ -14,10 +14,10 @@
 #' p1 = mtcars %>%
 #' as.data.frame() %>%
 #'  tibble::rownames_to_column("car") %>%
-#'   ggplot2::ggplot(ggplot2::es(car,mpg,fill = car))+
-#'  ggplot2::geom_col()+
-#'  scale_fill_geopalette("SanDiego,CA",zoom = "city")+
-#'  ggplot2::theme(axis.text.x = element_blank())
+#'   ggplot2::ggplot(ggplot2::aes(car,mpg,fill = car))+
+#'   ggplot2::geom_col()+
+#'   scale_fill_geopalette("SanDiego,CA",zoom = "city")+
+#'   ggplot2::theme(axis.text.x = element_blank())
 #' p1
 
 scale_fill_geopalette <- function(location, zoom = "city", discrete = TRUE) {
