@@ -17,4 +17,5 @@ Imports:
     TSP,
     purrr,
     grDevices,
-    stats
+    stats,
+    tibble

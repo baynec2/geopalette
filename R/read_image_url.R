@@ -8,7 +8,7 @@
 #'
 #' @examples
 #' # This will print the image associate with the image request url
-#' read_image_url(google_image_request_url)
+#' read_image_url("https://maps.googleapis.com/maps/api/staticmap?center=San%20Diego,CA&zoom=10&&maptype=satellite&size=400x400&key=AIzaSyA7l6m8iwPSIMlb3vFNK2TAKFSy7Is7N3c")
 read_image_url = function(google_image_request_url){
 # Downloading and reading image.
 curl::curl_download(google_image_request_url,destfile = "temp.png")

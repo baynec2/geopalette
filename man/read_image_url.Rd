@@ -17,5 +17,5 @@ reads image  into R from url passed to google API
 }
 \examples{
 # This will print the image associate with the image request url
-read_image_url(google_image_request_url)
+read_image_url("https://maps.googleapis.com/maps/api/staticmap?center=San\%20Diego,CA&zoom=10&&maptype=satellite&size=400x400&key=AIzaSyA7l6m8iwPSIMlb3vFNK2TAKFSy7Is7N3c")
 }
