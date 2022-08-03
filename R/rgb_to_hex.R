@@ -9,7 +9,7 @@
 #'
 #' @examples
 #' #Rgb values for blue -> #0000FF
-#' rbb_to_hex(0,0,255)
+#' rbb_to_hex(0,0,1)
 rgb_to_hex= function(red,green,blue){
   hex = rgb(red,green,blue)
   return(hex)

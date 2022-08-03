@@ -26,8 +26,8 @@ plot_unique_colors = function(unique_colors){
   df = data.frame(x=1:len,y=1,unique_colors = unique_colors)
 
   output = df %>%
-    ggplot2::ggplot(ggplot2::aes(x , y , fill = I(unique_colors)))+
-    ggplot2::geom_col(width = 1) +
+    ggplot2::ggplot(ggplot2::aes_string("x" , "y" ))+
+    ggplot2::geom_col(width = 1,fill = I(unique_colors)) +
     ggplot2::theme_void()
 
   return(output)
